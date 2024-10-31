@@ -11,20 +11,13 @@
 
 <body>
     <h1>Kontaktlista</h1>
-    <h2 class="skapaKontaktHeader">Skapa ny en ny kontakt</h2>
+    <h2 class="skapaKontaktHeader">Skapa en ny kontakt</h2>
 
     <div class="nyKontakt">
-        <label for="förnamn"></label>
-        <input type="text" id="förnamn" placeholder="Ange ditt förnamn">
-
-        <label for="efternamn"></label>
-        <input type="text" id="efternamn" placeholder="Ange ditt efternamn">
-
-        <label for="Telefon"></label>
-        <input type="tel" id="telefon" placeholder="Ange ditt telefonnummer">
-
-        <label for="email"></label>
-        <input type="email" id="email" placeholder="Ange din Mail">
+        <input type="text" id="förnamn" placeholder="Ange ditt förnamn" autocomplete="given-name">
+        <input type="text" id="efternamn" placeholder="Ange ditt efternamn" autocomplete="family-name">
+        <input type="tel" id="telefon" placeholder="Ange ditt telefonnummer" autocomplete="tel">
+        <input type="email" id="email" placeholder="Ange din email" autocomplete="email">
 
         <button id="skapaKontakt">Skapa kontakt</button>
     </div>
@@ -32,23 +25,7 @@
     <div class="kontaktLista">
         <h2 class="kontaktListaHeader">Lista för befintliga kontakter</h2>
         <ul class="kontakt-lista">
-            <!-- Exempel på kontakt 1 -->
-            <li class="kontakt-item">
-                <input type="text" class="kontakt-förnamn" value="Kontakt 1 förnamn" disabled>
-                <input type="text" class="kontakt-efternamn" value="Kontakt 1 efternamn" disabled>
-                <input type="text" class="kontakt-telefon" value="1234567" disabled>
-                <input type="text" class="kontakt-mail" value="exampel@mail.se" disabled>
-                <button class="ändra-kontakt">Ändra</button>
-                <button class="radera-kontakt">Radera</button>
-            </li>
-            <!-- Exempel på kontakt 2 -->
-            <li class="kontakt-item">
-                <input type="text" class="kontakt-namn" value="Kontakt 2 förnamn" disabled>
-                <input type="text" class="kontakt-efternamn" value="Kontakt 2 efternamn" disabled>
-                <input type="text" class="kontakt-telefon" value="7654321" disabled>
-                <input type="text" class="kontakt-mail" value="exampel@mail.se" disabled>
-                <button class="ändra-kontakt">Ändra</button>
-                <button class="radera-kontakt">Radera</button>
+            
         </ul>
     </div>
 
