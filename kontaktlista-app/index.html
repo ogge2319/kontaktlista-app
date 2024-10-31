@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
+
 <body>
     <h1>Kontaktlista</h1>
+    <h2 class="skapaKontaktHeader">Skapa ny en ny kontakt</h2>
+
+    <div class="nyKontakt">
+        <label for="förnamn"></label>
+        <input type="text" id="förnamn" placeholder="Ange ditt förnamn">
+
+        <label for="efternamn"></label>
+        <input type="text" id="efternamn" placeholder="Ange ditt efternamn">
+
+        <label for="Telefon"></label>
+        <input type="tel" id="telefon" placeholder="Ange ditt telefonnummer">
+
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Ange din Mail">
+
+        <button id="skapaKontakt">Skapa kontakt</button>
+    </div>
+
+    <div class="kontaktLista">
+        <h2 class="kontaktListaHeader">Lista för befintliga kontakter</h2>
+        <ul class="kontakt-lista">
+            <li class="kontakt-item">
+                <input type="text" class="kontakt-namn" value="kontakt 1" disabled>
+                <input type="text" class="kontakt-telefon" value="1234567" disabled>
+                <button class="ändra-kontakt">Ändra</button>
+                <button class="radera-kontakt">Radera</button>
+            </li>
+            <li class="kontakt-item">
+                <input type="text" class="kontakt-namn" value="Kontakt 2" disabled>
+                <input type="text" class="kontakt-telefon" value="7654321" disabled>
+                <button class="ändra-kontakt">Ändra</button>
+                <button class="radera-kontakt">Radera</button>
+        </ul>
+
+    </div>
+
 </body>
+
 </html>
